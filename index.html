@@ -3,45 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Centrum Ortopedii i Fizjoterapii Stopy i Stawu Skokowego">
+    <meta property="og:image" content="assets/centrum-stopy-pasja.jpg">
     <link rel="stylesheet" href="reset-css.css">
     <link rel="stylesheet" href="main.css">
-    <title>Centrum Pasja Stopy</title>
+    <title>Centrum Ortopedii i Fizjoterapii Stopy</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="main">
         <nav class="nav">
-            <img src="assets/logo.svg" alt="" class="nav__logo">
+            <a href="#"><img src="assets/logo.png" alt="" class="nav__logo"></a>
             <div class="nav__container">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Co leczymy</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Diagnostyka</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Leczenie</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Zespół</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Kontakt</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#problem" class="nav__link">Co leczymy</a></li>
+                    <li class="nav__item"><a href="#diagnosis" class="nav__link">Diagnostyka</a></li>
+                    <li class="nav__item"><a href="#treatment" class="nav__link">Leczenie</a></li>
+                    <li class="nav__item"><a href="#team" class="nav__link">Zespół</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Kontakt</a></li>
                 </ul>
             </div>
             <button class="hamburger">
                 <span class="hamburger__icon"></span>
             </button>
         </nav>
-        <div class="intro">
-            <div class="intro__text">
-                <h1 class="intro__title">Ortopedia i fizjoterapia</h1>
-                <h2 class="intro__subtitle">stopy i stawu skokowego</h2>
+        <div class="slider-container">
+            <div id="slider7" class="slides">
+                <div class="intro">
+                    <h1 class="intro__title">Centrum <br> Ortopedii i fizjoterapii</h1>
+                    <h2 class="intro__subtitle">stopy i stawu skokowego</h2>
+                    <a href="#team"><button class="btn">Umów wizytę</button></a>
+                </div>
+                <nav role="pagination" class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </nav>
+                <div class="slide">
+                    <figure>
+                        <img class="hidden" src="assets/konsultacje-ortopedyczne.jpg" alt="Ortopeda ból stopy">
+                    </figure>
+                    <div class="slide__description">
+                        <h3 class="slide__header">Konsultacje ortopedyczne</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <figure>
+                    <img class="hidden" src="assets/operacje-stopy.jpg" alt="Operacje stopy">
+                    </figure>
+                    <div class="slide__description">
+                    <h3 class="slide__header">Chirurgia stopy</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <figure>
+                    <img class="hidden" src="assets/fizjoterapia-stopy.jpg" alt="Rehabilitacja stopy">
+                    </figure>
+                    <div class="slide__description">
+                    <h3 class="slide__header">Fizjoterapia stopy</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <figure>
+                    <img class="hidden" src="assets/podologia-sportowa.jpg" alt="Podolog sportowy">
+                    </figure>
+                    <div class="slide__description">
+                    <h3 class="slide__header">Podologia sportowa</h3>
+                    </div>
+                </div>
             </div>
-            <img src="assets/stopa-intro.svg" alt="Leczenie chorób stopy, zabiegi operacyjne, fizjoterapia, wkładki ortopedyczne" class="intro__img">
-            <button class="btn">Umów wizytę</button>
         </div>
-        <div class="slider">
-            <div class="slider__window"></div>
+        <div class="intro-mobile">
+            <img src="assets/intro-cricles.png" alt="Ortopeda stopy" class="intro-mobile__circles">
+            <div class="intro-mobile__text">
+                <h1 class="intro-mobile__title">Centrum <br> Ortopedii i fizjoterapii</h1>
+                <h2 class="intro-mobile__subtitle">stopy i stawu skokowego</h2>
+            </div>
+            <img src="assets/stopa-intro.svg" alt="Leczenie chorób stopy, zabiegi operacyjne, fizjoterapia, wkładki ortopedyczne" class="intro-mobile__img">
+            <a class="btn" href="#team">Umów wizytę</a>
         </div>
         <div class="about">
-            Jesteśmy zespołem <span>ortopedów i fizjoterapeutów </span>koncentrujących się
-             na <span>leczeniu problemów ortopedycznych stopy i stawu skokowego</span>
+            <p>Jesteśmy zespołem ortopedów i fizjoterapeutów koncentrujących się
+            na leczeniu problemów ortopedycznych stopy i stawu skokowego</p>
         </div>
         <div class="offer">
-            <p class="section-title">Oferujemy</p>
+            <p class="section-title section-title--triangle">Oferujemy</p>
             <div class="offer__img">
                 <div class="offer__description">Konsultacje ortopedyczne</div>
                 <img src="assets/konsultacje-ortopedyczne-s.jpg" alt="Ortopeda ból stopy">
@@ -94,7 +141,7 @@
                 </p>
             </div>
         </div>
-        <p class="section-title">W czym pomagamy</p>
+        <p class="section-title" id="problem">W czym pomagamy</p>
         <div class="grid-container">
             <div class="problem problem--1">
                 <h2 class="problem__title">Wady stóp i zniekształcenia palców u dzieci i dorosłych</h2>
@@ -177,21 +224,23 @@
             <div class="autodiagnosis__container">
                 <div class="autodiagnosis__picture">
                     <img src="assets/zdiagnozuj-bol-stopy.jpg" alt="przyczyny bólu stopy" class="autodiagnosis__img">
-                    <img src="" alt="" class="autodiagnosis__choice">
-                    <img src="" alt="" class="autodiagnosis__choice">
-                    <img src="" alt="" class="autodiagnosis__choice">
-                    <img src="" alt="" class="autodiagnosis__choice">
-                    <img src="" alt="" class="autodiagnosis__choice">
+                    <button class="autodiagnosis__choice autodiagnosis__choice--ankle"></button>
+                    <button class="autodiagnosis__choice autodiagnosis__choice--achilles"></button>
+                    <button class="autodiagnosis__choice autodiagnosis__choice--heel"></button>
+                    <button class="autodiagnosis__choice autodiagnosis__choice--instep"></button>
+                    <button class="autodiagnosis__choice autodiagnosis__choice--mtp"></button>
+                    <button class="autodiagnosis__choice autodiagnosis__choice--forefoot"></button>
+                    <button class="autodiagnosis__choice autodiagnosis__choice--toes"></button>
                 </div>
-                <div class="autodiagnosis__effect">?</div>
+                <div class="autodiagnosis__effect"><p>Tutaj pojawi się odpowiedź :)<p></div>
             </div>
             <div class="autodiagnosis__text">
                 <p>Pamiętajmy o tym, że możliwych przyczyn bólu stopy jest o wiele więcej. </p>
                 <p>Aby ustalić właściwe rozpoznanie konieczne jest przeprowadzenie precyzyjnej diagnostyki. </p>
             </div>
         </section>
-        <p class="section-title">Diagnostyka</p>
         <section class="diagnosis">
+            <p class="section-title section-title--white" id="diagnosis">Diagnostyka</p>
             <div class="diagnosis__container">
                 <div class="diagnosis__item"> 
                     <img src="assets/badanie-usg-stopy-usg-stawu-skokowego.jpg" alt="USG stopy stawu skokowego" class="diagnosis__img">
@@ -239,8 +288,54 @@
                 </div>
             </div>
         </section>
+        <section class="treatment" id="treatment">
+            <p class="section-title section-title--triangle" id="treatment">Leczenie zachowawcze</p>
+            <div class="treatment__container">
+                <div class="treatment__item">
+                    <div class="treatment__description">
+                        <h3 class="treatment__title">Osocze bogatopłytkowe PRP</h3>
+                    </div>
+                        <img src="assets/osocze-prp.jpg" alt="Leczenie czynnikami wzrostu PRP" class="treatment__img">
+                </div>
+                <div class="treatment__item">
+                    <img src="assets/terapia-manualna.jpg" alt="Terapia manualna" class="treatment__img">
+                    <div class="treatment__description">
+                        <h3 class="treatment__title">Terapia manualna</h3>
+                    </div>
+                </div>
+                <div class="treatment__item">
+                    <img src="assets/trening-funkcjonalny.jpg" alt="Ćwiczenia stóp" class="treatment__img">
+                    <div class="treatment__description">
+                        <h3 class="treatment__title">Trening funkcjonalny</h3>
+                    </div>
+                </div>
+                <div class="treatment__item">
+                    <img src="assets/wkladki-ortopedyczne.jpg" alt="Wkładki ortopedyczne" class="treatment__img">
+                    <div class="treatment__description">
+                        <h3 class="treatment__title">Wkładki ortopedyczne</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="treatment">
+            <p class="section-title section-title--triangle">Leczenie operacyjne</p>
+            <div class="treatment__container">
+                <div class="treatment__item">
+                    <img src="assets/zabiegi-naprawcze-rekonstrukcyjne.jpg" alt="Rekonstrukcje chrząstki, naprawa więzadeł stawu skokowego" class="treatment__img">
+                    <div class="treatment__description">
+                        <h3 class="treatment__title">Zabiegi naprawcze i rekonstrukcyjne <br> Leczenie urazów sportowych</h3>
+                    </div>
+                </div>
+                <div class="treatment__item">
+                    <img src="assets/zabiegi-operacyjne.jpg" alt="Operacje palucha koślawego, operacje płaskostopia" class="treatment__img">
+                    <div class="treatment__description">
+                        <h3 class="treatment__title">Operacje haluksów, płaskostopia <br> Pozostałe zabiegi korekcyjne</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="team">
-            <p class="section-title"><span class="underline">Zespół</span></p>
+            <p class="section-title" id="team"><span class="underline">Zespół</span></p>
             <div class="team__container">
                 <div class="person">
                     <div class="person__img">
@@ -298,6 +393,31 @@
                 </div>
             </div>
         </section>
+        <div class="cooperation">
+            <p class="cooperation__title">Współpraca:</p>
+            <a href="http://ortopediaonline.pl/" target="_blank"><img src="assets/ortopedia-online.png" alt="Ortopedia Online" class="cooperation__logo"></a>
+        </div>
+        <div class="contact" id="contact">
+            <div class="contact__text">
+                <p class="contact__paragraph">Aleksandra Zemła</p>
+                <p class="contact__paragraph">tel. 790 788 321</p>
+            </div>
+            <div class="contact__photo"></div>
+        </div>
+        <footer class="footer">
+            <p class="footer__text">Copyright &copy Aleksandra Zemła <p>
+        </footer>
+    </div>
     <script src="main.js"></script>
+    <script src="comp.js"></script>
+    <script src="slider.js"></script>
+    <script>
+        (function () {
+          new Slider("#slider7 .slide").options({
+              nav: "#slider7 nav.dots span",
+              pause: false,
+          }).init();
+        })();
+    </script>
 </body>
 </html>

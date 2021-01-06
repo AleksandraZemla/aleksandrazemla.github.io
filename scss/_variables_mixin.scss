@@ -1,5 +1,5 @@
 //colors
-$bg-color: #EFFAFF;
+$bg-color: #fff;
 $bg-color-dark: #305e87;
 $dark-color: #005C9A;
 $dark-color2: #1c6ca4;
@@ -110,3 +110,33 @@ $breakpoints: (
     }
 }
 */
+
+%grid-container {
+    width: 100%;
+    @include mq(tablet) {
+        display: grid;
+        align-content: center;
+        grid-template-columns: 1fr 1fr;
+        align-self: initial;
+        column-gap: 10px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    @include mq(desktop) {
+        width: 80%;
+    }
+}
+
+%triangle {
+    content: url('assets/trojkat.png');
+    position: absolute;
+    top: -1rem;
+    left: 41%;
+    z-index: 4;
+    @include mq(tablet) {
+        left: 45%;
+        }
+    @include mq(desktop) {
+    left: 47%;
+    }
+}

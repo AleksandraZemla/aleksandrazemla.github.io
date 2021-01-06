@@ -3,26 +3,25 @@
     padding-top: 20px;
     background-color: $bg-color-dark;
     &__container {
-        width: 100%;
-        @include mq(tablet) {
-            display: grid;
-            align-content: center;
-            grid-template-columns: 1fr 1fr;
-            align-self: initial;
-            column-gap: 10px;
-            width: 95%;
-            margin: 0 auto;
-        }
-        @include mq(desktop) {
-            width: 80%;
+        @extend %grid-container;
+        position: relative;
+        &::before {
+            @extend %triangle;
         }
     }
     &__item {
         display: grid;
         grid-template-rows: auto 1fr;
+        overflow: hidden;
     }
     &__img {
         width: 100%;
+        @include mq(desktop) {
+            transition: transform 0.4s ease-in-out;
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
     }
     &__description {
         width: 100%;
