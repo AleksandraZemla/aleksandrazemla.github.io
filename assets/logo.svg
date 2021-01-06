@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 187 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Artboard1" transform="matrix(1,0,0,1,0,4)">
+        <rect x="0" y="-4" width="186.333" height="36.43" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="0" y="-4" width="186.333" height="36.43"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g id="LOGO-PASJA-STOPY" serif:id="LOGO PASJA STOPY" transform="matrix(1.62952,0,0,1.60245,-124.614,-86.03)">
+                <g transform="matrix(1,0,0,1,0,2)">
+                    <g transform="matrix(0.96783,0,0,0.993332,56.9969,-5.63451)">
+                        <text x="18.855px" y="70.57px" style="font-family:'BerlinSansFBDemi-Bold', 'Berlin Sans FB Demi', sans-serif;font-weight:700;font-size:20px;fill:rgb(0,93,155);">Pasja</text>
+                    </g>
+                    <g transform="matrix(0.96783,0,0,0.993332,108.376,4.09098)">
+                        <text x="18.855px" y="60.839px" style="font-family:'BerlinSansFB-Reg', 'Berlin Sans FB', sans-serif;font-size:16px;fill:rgb(0,93,155);">STOPY. pl</text>
+                    </g>
+                </g>
+                <g transform="matrix(1.46997,0,0,1,-355.832,-376.986)">
+                    <path d="M327.598,449.098L360.598,449.098" style="fill:none;stroke:rgb(90,218,117);stroke-width:1.54px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

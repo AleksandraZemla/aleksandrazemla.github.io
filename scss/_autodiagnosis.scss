@@ -1,0 +1,48 @@
+.autodiagnosis {
+    width: 100%;
+    &__header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 90px;
+        padding: 30px 5px;
+        @include title-text;
+        line-height: 1.7rem;
+        font-size: 1.3rem;
+        color: #fff;
+        background-color: $bg-color-dark;
+        &::after {
+            content: url('assets/trojkat.png');
+            position: absolute;
+            bottom: -36px;
+            left: 41%;
+            @include mq(tablet) {
+                left: 15%;
+                }
+            @include mq(desktop) {
+            left: 23%;
+            }
+        }
+    }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #fff;
+        @include mq(desktop) {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+    &__picture {
+        width: 350px;
+        height: auto;
+    }
+    &__text {
+        text-align: center;
+        padding: 2rem 5px;
+        line-height: 1.8rem;
+    }
+}
